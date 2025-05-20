@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:../switchboard-ios-demo/demos/SherpaTTS/SherpaTTS.xcodeproj">
+      location = "container:demos/SherpaTTS/SherpaTTS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:demos/WhisperSTT/WhisperSTT.xcodeproj">
    </FileRef>
 </Workspace>
