@@ -1,0 +1,26 @@
+name: WhisperSTTtoSherpaTTS
+options:
+  bundleIdPrefix: com.synervoz.whisperstttosherpattsdemo
+targets:
+  WhisperSTTtoSherpaTTS:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources
+    dependencies:
+      - framework: ../../libs/SwitchboardSDK.xcframework
+      - framework: ../../libs/SwitchboardSherpa.xcframework
+      - framework: ../../libs/SwitchboardOnnx.xcframework
+      - framework: ../../libs/SwitchboardSileroVAD.xcframework
+      - framework: ../../libs/SwitchboardWhisper.xcframework
+    settings:
+      base:
+        DEVELOPMENT_TEAM: "NQ2VLM7NM7"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        SWIFT_OBJC_BRIDGING_HEADER: "$(SRCROOT)/Sources/Bridging-Header.h"
+        HEADER_SEARCH_PATHS: 
+          - "$(SRCROOT)/../../libs/include"
+        CLANG_CXX_LANGUAGE_STANDARD: "c++17"
+        CLANG_CXX_LIBRARY: "libc++"

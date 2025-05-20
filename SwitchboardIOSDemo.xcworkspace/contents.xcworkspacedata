@@ -7,4 +7,7 @@
    <FileRef
       location = "container:demos/WhisperSTT/WhisperSTT.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:demos/WhisperSTTtoSherpaTTS/WhisperSTTtoSherpaTTS.xcodeproj">
+   </FileRef>
 </Workspace>
