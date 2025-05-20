@@ -1,0 +1,31 @@
+{
+    "type": "RealTimeGraphRenderer",
+    "config": {
+        "microphoneEnabled": false,
+        "graph": {
+            "config": {
+                "sampleRate": 16000
+            },
+            "nodes": [
+                {
+                    "id": "sherpaTTSNode",
+                    "type": "Sherpa.SherpaTTSNode"
+                },
+                {
+                    "id": "monoToMultiChannelNode",
+                    "type": "MonoToMultiChannel"
+                }
+            ],
+            "connections": [
+                {
+                    "sourceNode": "sherpaTTSNode",
+                    "destinationNode": "monoToMultiChannelNode"
+                },
+                {
+                    "sourceNode": "monoToMultiChannelNode",
+                    "destinationNode": "outputNode"
+                }
+            ]
+        }
+    }
+}

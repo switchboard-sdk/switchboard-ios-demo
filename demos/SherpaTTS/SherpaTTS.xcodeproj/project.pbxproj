@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100BF59FFE550F91E1183541 /* TTSExample.json in Resources */ = {isa = PBXBuildFile; fileRef = B561250F2A32A54912E17A16 /* TTSExample.json */; };
+		88718AFDD9CC5659AF65E791 /* TTSExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = A27DA3BBC8561BD5041C0592 /* TTSExample.mm */; };
+		8ADCC98399DE98EE32D675E4 /* SwitchboardSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99D3AC27A746130E194BF9E8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EE8AA1D0E86CC8AB0C87E /* App.swift */; };
+		B4AD8800083AF83C2491B02A /* SherpaTTSExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2E891458DF91FD1994826 /* SherpaTTSExample.swift */; };
+		E2D16808338AFC436AE688CE /* SwitchboardSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */; };
+		E8C2550D780CA1B9CF696EFB /* SwitchboardSherpa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */; };
+		EDF0071EE3A946AE82AA60A2 /* SwitchboardSherpa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6EC7CA501B4AF1615E058518 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8ADCC98399DE98EE32D675E4 /* SwitchboardSDK.xcframework in Embed Frameworks */,
+				EDF0071EE3A946AE82AA60A2 /* SwitchboardSherpa.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSherpa.xcframework; path = ../../libs/SwitchboardSherpa.xcframework; sourceTree = "<group>"; };
+		24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSDK.xcframework; path = ../../libs/SwitchboardSDK.xcframework; sourceTree = "<group>"; };
+		380EE8AA1D0E86CC8AB0C87E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		733404F3A82FF9B1F4ACEBDD /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		A27DA3BBC8561BD5041C0592 /* TTSExample.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TTSExample.mm; sourceTree = "<group>"; };
+		AAB731AEF4D57C7BC4B30E9A /* TTSExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSExample.h; sourceTree = "<group>"; };
+		AB4AAD8F8687ED21C2F9F9CE /* SherpaTTS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SherpaTTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B561250F2A32A54912E17A16 /* TTSExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TTSExample.json; sourceTree = "<group>"; };
+		CFD2E891458DF91FD1994826 /* SherpaTTSExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaTTSExample.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C3320E846A23558E3C9F92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D16808338AFC436AE688CE /* SwitchboardSDK.xcframework in Frameworks */,
+				E8C2550D780CA1B9CF696EFB /* SwitchboardSherpa.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		835B9CBE3C6D85AE63213CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB4AAD8F8687ED21C2F9F9CE /* SherpaTTS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C176105641EC4E6410D2D5AF = {
+			isa = PBXGroup;
+			children = (
+				E5568B69602842864467EBB5 /* Sources */,
+				FBA64EB58EA0DBC63FE97376 /* Frameworks */,
+				835B9CBE3C6D85AE63213CA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5568B69602842864467EBB5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				380EE8AA1D0E86CC8AB0C87E /* App.swift */,
+				733404F3A82FF9B1F4ACEBDD /* Bridging-Header.h */,
+				CFD2E891458DF91FD1994826 /* SherpaTTSExample.swift */,
+				AAB731AEF4D57C7BC4B30E9A /* TTSExample.h */,
+				B561250F2A32A54912E17A16 /* TTSExample.json */,
+				A27DA3BBC8561BD5041C0592 /* TTSExample.mm */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FBA64EB58EA0DBC63FE97376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */,
+				178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E752C708BD24D752C0B0FBE /* SherpaTTS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5802CFC276E50CC38FF0BDD8 /* Build configuration list for PBXNativeTarget "SherpaTTS" */;
+			buildPhases = (
+				A6410B742CD92523BD81000C /* Sources */,
+				13128233548A983D8E7290DB /* Resources */,
+				85C3320E846A23558E3C9F92 /* Frameworks */,
+				6EC7CA501B4AF1615E058518 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SherpaTTS;
+			productName = SherpaTTS;
+			productReference = AB4AAD8F8687ED21C2F9F9CE /* SherpaTTS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A977FAB9971DCF9DBA2CC50E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9E752C708BD24D752C0B0FBE = {
+						DevelopmentTeam = NQ2VLM7NM7;
+					};
+				};
+			};
+			buildConfigurationList = 5D01071523992B20C4E5B8A9 /* Build configuration list for PBXProject "SherpaTTS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C176105641EC4E6410D2D5AF;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E752C708BD24D752C0B0FBE /* SherpaTTS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13128233548A983D8E7290DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100BF59FFE550F91E1183541 /* TTSExample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6410B742CD92523BD81000C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D3AC27A746130E194BF9E8 /* App.swift in Sources */,
+				B4AD8800083AF83C2491B02A /* SherpaTTSExample.swift in Sources */,
+				88718AFDD9CC5659AF65E791 /* TTSExample.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50A3E8B26F6EF4F9CF8997B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		706739752C3A27A8AF03944F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = NQ2VLM7NM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../../libs\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../libs/include",
+				);
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.synervoz.sherpattsdemo.SherpaTTS;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		944A79BEE1AF1F714EAA7D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = NQ2VLM7NM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../../libs\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../libs/include",
+				);
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.synervoz.sherpattsdemo.SherpaTTS;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD0D104E991E56FA2A63BCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5802CFC276E50CC38FF0BDD8 /* Build configuration list for PBXNativeTarget "SherpaTTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706739752C3A27A8AF03944F /* Debug */,
+				944A79BEE1AF1F714EAA7D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5D01071523992B20C4E5B8A9 /* Build configuration list for PBXProject "SherpaTTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A3E8B26F6EF4F9CF8997B8 /* Debug */,
+				FD0D104E991E56FA2A63BCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A977FAB9971DCF9DBA2CC50E /* Project object */;
+}
