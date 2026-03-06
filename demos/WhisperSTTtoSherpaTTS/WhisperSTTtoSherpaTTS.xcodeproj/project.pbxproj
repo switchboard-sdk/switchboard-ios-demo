@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		414E6F20773FD69DB9888AEC /* STTtoTTSExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 9326AFBF14F833D617F6C8B9 /* STTtoTTSExample.json */; };
 		4842FDEB3407354158DB859D /* SwitchboardOnnx.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FE4D1382FA954956A42D8C /* SwitchboardOnnx.xcframework */; };
 		5C58B66D9366616542391D62 /* SwitchboardSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E880EC46D3CD4D7260A4FB /* SwitchboardSDK.xcframework */; };
+		5D1DBFCC2F5AEB1B00AB6D40 /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1DBFCB2F5AEB1B00AB6D40 /* whisper.xcframework */; };
+		5D1DBFCD2F5AEB1B00AB6D40 /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1DBFCB2F5AEB1B00AB6D40 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F731F38B3CE880AF54BE502 /* SwitchboardWhisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDC38E9604341FEDF51F46E /* SwitchboardWhisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75624327E4102AACE18A1FA5 /* SwitchboardSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0E880EC46D3CD4D7260A4FB /* SwitchboardSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F8DEE4D32B757810E3B7812 /* SwitchboardOnnx.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47FE4D1382FA954956A42D8C /* SwitchboardOnnx.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -34,6 +36,7 @@
 				CF717D77F837F7B4044889CE /* SwitchboardSherpa.xcframework in Embed Frameworks */,
 				7F8DEE4D32B757810E3B7812 /* SwitchboardOnnx.xcframework in Embed Frameworks */,
 				C25760B46BF478005A5B9A3C /* SwitchboardSileroVAD.xcframework in Embed Frameworks */,
+				5D1DBFCD2F5AEB1B00AB6D40 /* whisper.xcframework in Embed Frameworks */,
 				5F731F38B3CE880AF54BE502 /* SwitchboardWhisper.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -47,11 +50,12 @@
 		2C56D71CEB56740010F7307A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		43AA654F3B29E7BDDA996518 /* STTtoTTSExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTtoTTSExample.h; sourceTree = "<group>"; };
 		47FE4D1382FA954956A42D8C /* SwitchboardOnnx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardOnnx.xcframework; path = ../../libs/SwitchboardOnnx.xcframework; sourceTree = "<group>"; };
+		5D1DBFCB2F5AEB1B00AB6D40 /* whisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = whisper.xcframework; path = ../../libs/whisper.xcframework; sourceTree = "<group>"; };
 		61ED83F9B98784CBD7C06BC4 /* SwitchboardSherpa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSherpa.xcframework; path = ../../libs/SwitchboardSherpa.xcframework; sourceTree = "<group>"; };
 		9326AFBF14F833D617F6C8B9 /* STTtoTTSExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = STTtoTTSExample.json; sourceTree = "<group>"; };
 		CBD27B12C1199C4307AD7C28 /* STTtoTTSExample.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = STTtoTTSExample.mm; sourceTree = "<group>"; };
 		D964844F643E2AC632763AB0 /* WhisperSTTtoSherpaTTSExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperSTTtoSherpaTTSExample.swift; sourceTree = "<group>"; };
-		DF0FA8D8E85774CB27F20432 /* WhisperSTTtoSherpaTTS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WhisperSTTtoSherpaTTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0FA8D8E85774CB27F20432 /* WhisperSTTtoSherpaTTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhisperSTTtoSherpaTTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B881E4A090FD65EE755D89 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		F0E880EC46D3CD4D7260A4FB /* SwitchboardSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSDK.xcframework; path = ../../libs/SwitchboardSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +69,7 @@
 				C6879568C37998C7224994C5 /* SwitchboardSherpa.xcframework in Frameworks */,
 				4842FDEB3407354158DB859D /* SwitchboardOnnx.xcframework in Frameworks */,
 				C93E13DEF8E9C9E287A9AC94 /* SwitchboardSileroVAD.xcframework in Frameworks */,
+				5D1DBFCC2F5AEB1B00AB6D40 /* whisper.xcframework in Frameworks */,
 				81C2BAF0DA20C27672716595 /* SwitchboardWhisper.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +88,7 @@
 		74DA174DA5F6499BD0FE6CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D1DBFCB2F5AEB1B00AB6D40 /* whisper.xcframework */,
 				47FE4D1382FA954956A42D8C /* SwitchboardOnnx.xcframework */,
 				F0E880EC46D3CD4D7260A4FB /* SwitchboardSDK.xcframework */,
 				61ED83F9B98784CBD7C06BC4 /* SwitchboardSherpa.xcframework */,
@@ -204,9 +210,8 @@
 					"\"../../libs\"",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../libs/include",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libs/include";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -233,9 +238,8 @@
 					"\"../../libs\"",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../libs/include",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libs/include";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (

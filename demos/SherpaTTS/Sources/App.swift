@@ -6,8 +6,22 @@ import SwitchboardSherpa
 struct SwitchboardiOSDemoApp: App {
 
     init() {
-        SBSwitchboardSDK.initialize(withAppID: "demo", appSecret: "demo")
-        SBSherpaExtension.initialize(withConfig: [:])
+        var extensionsConfig: [String: Any] = [:]
+
+        // Sherpa Extension
+        SBSherpaExtension.loadExtension()
+        extensionsConfig["Sherpa"] = [:]
+
+        // Init SDK
+        let initConfig: [String: Any] = [
+            "appID": "demo",
+            "appSecret": "demo",
+            "extensions": extensionsConfig,
+        ]
+        let result = Switchboard.initialize(withConfig: initConfig)
+        if !result.success {
+            fatalError("Switchboard SDK initialization failed.")
+        }
     }
 
     var body: some Scene {

@@ -1,6 +1,6 @@
 #import "STTExample.h"
 
-#include <switchboard/SwitchboardV3.hpp>
+#include <switchboard/Switchboard.hpp>
 
 using namespace switchboard;
 
@@ -17,23 +17,24 @@ using namespace switchboard;
     }
 
     const char* config = [jsonString UTF8String];
-    Result<SwitchboardV3::ObjectID> result = SwitchboardV3::createEngine(std::string(config));
+    Result<Switchboard::ObjectID> result = Switchboard::createEngine(std::string(config));
     if (result.isError()) {
         return;
     }
-    engineID = result.value().value();
+    engineID = result.value();
 
-    SwitchboardV3::addEventListener("vadNode", "start", [](const std::any& data) {
+    Switchboard::addEventListener("vadNode", "speechStarted", [](const Event& event) {
         NSLog(@"STT - vadNode start");
     });
 
-    SwitchboardV3::addEventListener("vadNode", "end", [](const std::any& data) {
+    Switchboard::addEventListener("vadNode", "speechEnded", [](const Event& event) {
         NSLog(@"STT - vadNode end");
     });
 
     STTExample* __weak weakSelf = self;
-    SwitchboardV3::addEventListener("sttNode", "transcription", [weakSelf](const std::any& data) {
-        const auto text = Config::toString(data);
+    Switchboard::addEventListener("sttNode", "transcribed", [weakSelf](const Event& event) {
+        const auto params = SBAny::convert<SBAnyMap>(event.data);
+        const auto text = SBAny::convert<std::string>(params.at("text"));
         NSString* textString = [NSString stringWithUTF8String:text.c_str()];
         NSLog(@"STT - transcribed: %@", textString);
         if (weakSelf.delegate) {
@@ -43,14 +44,14 @@ using namespace switchboard;
 }
 
 - (void)startEngine {
-    auto startEngineResult = SwitchboardV3::callAction(engineID, "start");
+    auto startEngineResult = Switchboard::callAction(engineID, "start");
     if (startEngineResult.isError()) {
         NSLog(@"Failed to start audio engine");
     }
 }
 
 - (void)stopEngine {
-    auto stopEngineResult = SwitchboardV3::callAction(engineID, "stop");
+    auto stopEngineResult = Switchboard::callAction(engineID, "stop");
     if (stopEngineResult.isError()) {
         NSLog(@"Failed to stop audio engine");
     }

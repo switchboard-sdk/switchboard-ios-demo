@@ -12,8 +12,8 @@ If dependencies are not included, do the following:
     - `SwitchboardOnnx.xcframework`
     - `SwitchboardSherpa.xcframework`
     - `SwitchboardWhisper.xcframework`
+    - `whisper.xcframework`
     - `SwitchboardSileroVAD.xcframework`
-    - All the Whisper dependencies: `libggml*` and `libwhisper*`
     - SwitchboardSDK C++ include directory
 
 ## Build & Run
