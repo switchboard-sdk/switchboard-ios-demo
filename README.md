@@ -4,17 +4,13 @@ A simple Xcode-based speech-to-text and text-to-speech demo application for iOS.
 
 ## Setup
 
-If dependencies are not included, do the following:
+Run the setup script to download all dependencies:
 
-1. Create directory named `libs` in the project root.
-2. Obtain/build and copy the following archives in `libs`:
-    - `SwitchboardSDK.xcframework`
-    - `SwitchboardOnnx.xcframework`
-    - `SwitchboardSherpa.xcframework`
-    - `SwitchboardWhisper.xcframework`
-    - `whisper.xcframework`
-    - `SwitchboardSileroVAD.xcframework`
-    - SwitchboardSDK C++ include directory
+```sh
+./scripts/setup.sh
+```
+
+This downloads Switchboard SDK 3.2.2 frameworks from S3 into the `libs/` directory.
 
 ## Build & Run
 

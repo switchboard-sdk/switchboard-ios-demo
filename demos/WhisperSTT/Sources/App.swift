@@ -15,7 +15,7 @@ struct SwitchboardiOSDemoApp: App {
 
         // SileroVAD Extension
         SBSileroVADExtension.loadExtension()
-        extensionsConfig["SileroVAD"] = [:]
+        extensionsConfig["Silero"] = [:]
 
         // Init SDK
         let initConfig: [String: Any] = [

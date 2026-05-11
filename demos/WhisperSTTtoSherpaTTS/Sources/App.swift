@@ -16,7 +16,7 @@ struct SwitchboardiOSDemoApp: App {
 
         // SileroVAD Extension
         SBSileroVADExtension.loadExtension()
-        extensionsConfig["SileroVAD"] = [:]
+        extensionsConfig["Silero"] = [:]
 
         // Sherpa Extension
         SBSherpaExtension.loadExtension()
