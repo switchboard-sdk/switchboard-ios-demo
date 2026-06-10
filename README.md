@@ -10,7 +10,7 @@ Run the setup script to download all dependencies:
 ./scripts/setup.sh
 ```
 
-This downloads Switchboard SDK 3.2.2 frameworks from S3 into the `libs/` directory.
+This downloads Switchboard SDK 3.2.3 frameworks from S3 into the `libs/` directory.
 
 ## Build & Run
 
