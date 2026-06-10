@@ -4,7 +4,7 @@ set -eu
 
 PROJECT_DIR="$(git rev-parse --show-toplevel)"
 PLATFORM="ios"
-SDK_VERSION="release/3.2.2"
+SDK_VERSION="release/3.2.3"
 LIBS_DIR="${PROJECT_DIR}/libs"
 TMP_DIR="${LIBS_DIR}/.tmp"
 
