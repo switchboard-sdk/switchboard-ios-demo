@@ -3,42 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		100BF59FFE550F91E1183541 /* TTSExample.json in Resources */ = {isa = PBXBuildFile; fileRef = B561250F2A32A54912E17A16 /* TTSExample.json */; };
-		88718AFDD9CC5659AF65E791 /* TTSExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = A27DA3BBC8561BD5041C0592 /* TTSExample.mm */; };
-		8ADCC98399DE98EE32D675E4 /* SwitchboardSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C00000000000000000000C1 /* SwitchboardSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5C00000000000000000000B1 /* SwitchboardSDK */; };
+		5C00000000000000000000C2 /* SwitchboardSherpa in Frameworks */ = {isa = PBXBuildFile; productRef = 5C00000000000000000000B2 /* SwitchboardSherpa */; };
+		5C00000000000000000000D2 /* TTSExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C00000000000000000000D1 /* TTSExample.swift */; };
 		99D3AC27A746130E194BF9E8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EE8AA1D0E86CC8AB0C87E /* App.swift */; };
 		B4AD8800083AF83C2491B02A /* SherpaTTSExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2E891458DF91FD1994826 /* SherpaTTSExample.swift */; };
-		E2D16808338AFC436AE688CE /* SwitchboardSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */; };
-		E8C2550D780CA1B9CF696EFB /* SwitchboardSherpa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */; };
-		EDF0071EE3A946AE82AA60A2 /* SwitchboardSherpa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		6EC7CA501B4AF1615E058518 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8ADCC98399DE98EE32D675E4 /* SwitchboardSDK.xcframework in Embed Frameworks */,
-				EDF0071EE3A946AE82AA60A2 /* SwitchboardSherpa.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSherpa.xcframework; path = ../../libs/SwitchboardSherpa.xcframework; sourceTree = "<group>"; };
-		24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSDK.xcframework; path = ../../libs/SwitchboardSDK.xcframework; sourceTree = "<group>"; };
 		380EE8AA1D0E86CC8AB0C87E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		733404F3A82FF9B1F4ACEBDD /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		A27DA3BBC8561BD5041C0592 /* TTSExample.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TTSExample.mm; sourceTree = "<group>"; };
-		AAB731AEF4D57C7BC4B30E9A /* TTSExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSExample.h; sourceTree = "<group>"; };
+		5C00000000000000000000D1 /* TTSExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSExample.swift; sourceTree = "<group>"; };
 		AB4AAD8F8687ED21C2F9F9CE /* SherpaTTS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SherpaTTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B561250F2A32A54912E17A16 /* TTSExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TTSExample.json; sourceTree = "<group>"; };
 		CFD2E891458DF91FD1994826 /* SherpaTTSExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaTTSExample.swift; sourceTree = "<group>"; };
@@ -49,8 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D16808338AFC436AE688CE /* SwitchboardSDK.xcframework in Frameworks */,
-				E8C2550D780CA1B9CF696EFB /* SwitchboardSherpa.xcframework in Frameworks */,
+				5C00000000000000000000C1 /* SwitchboardSDK in Frameworks */,
+				5C00000000000000000000C2 /* SwitchboardSherpa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				E5568B69602842864467EBB5 /* Sources */,
-				FBA64EB58EA0DBC63FE97376 /* Frameworks */,
 				835B9CBE3C6D85AE63213CA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,22 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				380EE8AA1D0E86CC8AB0C87E /* App.swift */,
-				733404F3A82FF9B1F4ACEBDD /* Bridging-Header.h */,
 				CFD2E891458DF91FD1994826 /* SherpaTTSExample.swift */,
-				AAB731AEF4D57C7BC4B30E9A /* TTSExample.h */,
 				B561250F2A32A54912E17A16 /* TTSExample.json */,
-				A27DA3BBC8561BD5041C0592 /* TTSExample.mm */,
+				5C00000000000000000000D1 /* TTSExample.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		FBA64EB58EA0DBC63FE97376 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				24E2CF2F9EEC734D8FF5F658 /* SwitchboardSDK.xcframework */,
-				178F9B8C5EBA6B9225D1D04B /* SwitchboardSherpa.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,13 +73,16 @@
 				A6410B742CD92523BD81000C /* Sources */,
 				13128233548A983D8E7290DB /* Resources */,
 				85C3320E846A23558E3C9F92 /* Frameworks */,
-				6EC7CA501B4AF1615E058518 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SherpaTTS;
+			packageProductDependencies = (
+				5C00000000000000000000B1 /* SwitchboardSDK */,
+				5C00000000000000000000B2 /* SwitchboardSherpa */,
+			);
 			productName = SherpaTTS;
 			productReference = AB4AAD8F8687ED21C2F9F9CE /* SherpaTTS.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +110,9 @@
 				en,
 			);
 			mainGroup = C176105641EC4E6410D2D5AF;
+			packageReferences = (
+				5C00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -166,7 +139,7 @@
 			files = (
 				99D3AC27A746130E194BF9E8 /* App.swift in Sources */,
 				B4AD8800083AF83C2491B02A /* SherpaTTSExample.swift in Sources */,
-				88718AFDD9CC5659AF65E791 /* TTSExample.mm in Sources */,
+				5C00000000000000000000D2 /* TTSExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,14 +216,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = NQ2VLM7NM7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"../../libs\"",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../libs/include",
-				);
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -259,7 +225,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.synervoz.sherpattsdemo.SherpaTTS;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -272,14 +237,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = NQ2VLM7NM7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"../../libs\"",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../libs/include",
-				);
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -288,7 +246,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.synervoz.sherpattsdemo.SherpaTTS;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -370,6 +327,30 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 3.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C00000000000000000000B1 /* SwitchboardSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardSDK;
+		};
+		5C00000000000000000000B2 /* SwitchboardSherpa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardSherpa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A977FAB9971DCF9DBA2CC50E /* Project object */;
 }

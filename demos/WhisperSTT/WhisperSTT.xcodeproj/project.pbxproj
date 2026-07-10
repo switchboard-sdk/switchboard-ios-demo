@@ -8,33 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		25B4CB72A2E1A534A5626F2D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD653C446C3B88B9F3E917 /* App.swift */; };
-		30AAD585C78EB97FA0F2BDE8 /* SwitchboardWhisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03AC8AFCCDE39F2EDD080F54 /* SwitchboardWhisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54B076BC3ED0AE1ACDB9FF7E /* SwitchboardSileroVAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E9F25C2A54C39880309EDC /* SwitchboardSileroVAD.xcframework */; };
-		5549D9ABA882A0D4536720BE /* SwitchboardSileroVAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48E9F25C2A54C39880309EDC /* SwitchboardSileroVAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D1DBFC92F5AEB0F00AB6D40 /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1DBFC82F5AEB0F00AB6D40 /* whisper.xcframework */; };
-		5D1DBFCA2F5AEB0F00AB6D40 /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1DBFC82F5AEB0F00AB6D40 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		763F32012F98C81262FFA6BD /* SwitchboardWhisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AC8AFCCDE39F2EDD080F54 /* SwitchboardWhisper.xcframework */; };
+		5B00000000000000000000D2 /* STTExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00000000000000000000D1 /* STTExample.swift */; };
 		8FB20471333BF60A6FAFCCB3 /* STTExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 59EDEBFD60A4A82AF044F0CE /* STTExample.json */; };
-		911770980D20C4A8A2AAAAA3 /* SwitchboardOnnx.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B07810ADD889AD9DEEC1B56D /* SwitchboardOnnx.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AAAC9D3EFA5E1E04FAB048E5 /* SwitchboardSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFACD075303F0E4242298F12 /* SwitchboardSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C5B2ECFE08A37A752FA04DFA /* STTExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBC8309B8CD7222DA2807D /* STTExample.mm */; };
 		D37BDCCB89B5ABF30EA8386C /* WhisperSTTExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52378308FDAF425E8C3E419 /* WhisperSTTExample.swift */; };
-		D3B80E11C07D56523677F1DC /* SwitchboardOnnx.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07810ADD889AD9DEEC1B56D /* SwitchboardOnnx.xcframework */; };
-		DA760D6DB82F91AEFBA71B60 /* SwitchboardSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFACD075303F0E4242298F12 /* SwitchboardSDK.xcframework */; };
+		5B00000000000000000000C1 /* SwitchboardSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B1 /* SwitchboardSDK */; };
+		5B00000000000000000000C2 /* SwitchboardOnnx in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B2 /* SwitchboardOnnx */; };
+		5B00000000000000000000C3 /* SwitchboardSileroVAD in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B3 /* SwitchboardSileroVAD */; };
+		5B00000000000000000000C4 /* SwitchboardWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B4 /* SwitchboardWhisper */; };
+		5B00000000000000000000E2 /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00000000000000000000E1 /* whisper.xcframework */; };
+		5B00000000000000000000E3 /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00000000000000000000E1 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0EBC8C0855C4958B3B439DC6 /* Embed Frameworks */ = {
+		5B00000000000000000000E4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AAAC9D3EFA5E1E04FAB048E5 /* SwitchboardSDK.xcframework in Embed Frameworks */,
-				911770980D20C4A8A2AAAAA3 /* SwitchboardOnnx.xcframework in Embed Frameworks */,
-				5549D9ABA882A0D4536720BE /* SwitchboardSileroVAD.xcframework in Embed Frameworks */,
-				5D1DBFCA2F5AEB0F00AB6D40 /* whisper.xcframework in Embed Frameworks */,
-				30AAD585C78EB97FA0F2BDE8 /* SwitchboardWhisper.xcframework in Embed Frameworks */,
+				5B00000000000000000000E3 /* whisper.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,18 +34,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03AC8AFCCDE39F2EDD080F54 /* SwitchboardWhisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardWhisper.xcframework; path = ../../libs/SwitchboardWhisper.xcframework; sourceTree = "<group>"; };
 		15DD653C446C3B88B9F3E917 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		2BEBC8309B8CD7222DA2807D /* STTExample.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = STTExample.mm; sourceTree = "<group>"; };
+		5B00000000000000000000E1 /* whisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = whisper.xcframework; path = ../../libs/whisper.xcframework; sourceTree = "<group>"; };
 		2F5BE9337C51CCB38079173F /* WhisperSTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhisperSTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E9F25C2A54C39880309EDC /* SwitchboardSileroVAD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSileroVAD.xcframework; path = ../../libs/SwitchboardSileroVAD.xcframework; sourceTree = "<group>"; };
 		59EDEBFD60A4A82AF044F0CE /* STTExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = STTExample.json; sourceTree = "<group>"; };
-		5D1DBFC82F5AEB0F00AB6D40 /* whisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = whisper.xcframework; path = ../../libs/whisper.xcframework; sourceTree = "<group>"; };
-		ADCF17FDD57150FBB66C4DA5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		B07810ADD889AD9DEEC1B56D /* SwitchboardOnnx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardOnnx.xcframework; path = ../../libs/SwitchboardOnnx.xcframework; sourceTree = "<group>"; };
-		BAEEE883062E5CCBAB0699C6 /* STTExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTExample.h; sourceTree = "<group>"; };
+		5B00000000000000000000D1 /* STTExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTExample.swift; sourceTree = "<group>"; };
 		E52378308FDAF425E8C3E419 /* WhisperSTTExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperSTTExample.swift; sourceTree = "<group>"; };
-		FFACD075303F0E4242298F12 /* SwitchboardSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwitchboardSDK.xcframework; path = ../../libs/SwitchboardSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA760D6DB82F91AEFBA71B60 /* SwitchboardSDK.xcframework in Frameworks */,
-				D3B80E11C07D56523677F1DC /* SwitchboardOnnx.xcframework in Frameworks */,
-				54B076BC3ED0AE1ACDB9FF7E /* SwitchboardSileroVAD.xcframework in Frameworks */,
-				5D1DBFC92F5AEB0F00AB6D40 /* whisper.xcframework in Frameworks */,
-				763F32012F98C81262FFA6BD /* SwitchboardWhisper.xcframework in Frameworks */,
+				5B00000000000000000000C1 /* SwitchboardSDK in Frameworks */,
+				5B00000000000000000000C2 /* SwitchboardOnnx in Frameworks */,
+				5B00000000000000000000C3 /* SwitchboardSileroVAD in Frameworks */,
+				5B00000000000000000000C4 /* SwitchboardWhisper in Frameworks */,
+				5B00000000000000000000E2 /* whisper.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,19 +62,15 @@
 			isa = PBXGroup;
 			children = (
 				F35565F4D21752DD04BA0234 /* Sources */,
-				10B3D92E7D57AADD3AF50FB7 /* Frameworks */,
+				5B00000000000000000000E5 /* Frameworks */,
 				A0384A4A93287EF4D1EB7D71 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		10B3D92E7D57AADD3AF50FB7 /* Frameworks */ = {
+		5B00000000000000000000E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D1DBFC82F5AEB0F00AB6D40 /* whisper.xcframework */,
-				B07810ADD889AD9DEEC1B56D /* SwitchboardOnnx.xcframework */,
-				FFACD075303F0E4242298F12 /* SwitchboardSDK.xcframework */,
-				48E9F25C2A54C39880309EDC /* SwitchboardSileroVAD.xcframework */,
-				03AC8AFCCDE39F2EDD080F54 /* SwitchboardWhisper.xcframework */,
+				5B00000000000000000000E1 /* whisper.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,10 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				15DD653C446C3B88B9F3E917 /* App.swift */,
-				ADCF17FDD57150FBB66C4DA5 /* Bridging-Header.h */,
-				BAEEE883062E5CCBAB0699C6 /* STTExample.h */,
 				59EDEBFD60A4A82AF044F0CE /* STTExample.json */,
-				2BEBC8309B8CD7222DA2807D /* STTExample.mm */,
+				5B00000000000000000000D1 /* STTExample.swift */,
 				E52378308FDAF425E8C3E419 /* WhisperSTTExample.swift */,
 			);
 			path = Sources;
@@ -124,13 +104,19 @@
 				2BD5A0C5877193D988DFF89D /* Sources */,
 				6A7F33DF2A212972FEFC3A4D /* Resources */,
 				2533A3717811D2A772ACD893 /* Frameworks */,
-				0EBC8C0855C4958B3B439DC6 /* Embed Frameworks */,
+				5B00000000000000000000E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WhisperSTT;
+			packageProductDependencies = (
+				5B00000000000000000000B1 /* SwitchboardSDK */,
+				5B00000000000000000000B2 /* SwitchboardOnnx */,
+				5B00000000000000000000B3 /* SwitchboardSileroVAD */,
+				5B00000000000000000000B4 /* SwitchboardWhisper */,
+			);
 			productName = WhisperSTT;
 			productReference = 2F5BE9337C51CCB38079173F /* WhisperSTT.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +144,9 @@
 				en,
 			);
 			mainGroup = 0017C987BA4E7AD934979466;
+			packageReferences = (
+				5B00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -183,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B4CB72A2E1A534A5626F2D /* App.swift in Sources */,
-				C5B2ECFE08A37A752FA04DFA /* STTExample.mm in Sources */,
+				5B00000000000000000000D2 /* STTExample.swift in Sources */,
 				D37BDCCB89B5ABF30EA8386C /* WhisperSTTExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,10 +245,9 @@
 				DEVELOPMENT_TEAM = NQ2VLM7NM7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"../../libs\"",
+					"$(SRCROOT)/../../libs",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libs/include";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app uses the microphone to get audio input to feed into a speech-to-text service.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -269,7 +257,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.synervoz.whispersttdemo.WhisperSTT;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -346,10 +333,9 @@
 				DEVELOPMENT_TEAM = NQ2VLM7NM7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"../../libs\"",
+					"$(SRCROOT)/../../libs",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libs/include";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app uses the microphone to get audio input to feed into a speech-to-text service.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -359,7 +345,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.synervoz.whispersttdemo.WhisperSTT;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -386,6 +371,40 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 3.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B00000000000000000000B1 /* SwitchboardSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardSDK;
+		};
+		5B00000000000000000000B2 /* SwitchboardOnnx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardOnnx;
+		};
+		5B00000000000000000000B3 /* SwitchboardSileroVAD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardSileroVAD;
+		};
+		5B00000000000000000000B4 /* SwitchboardWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B00000000000000000000A1 /* XCRemoteSwiftPackageReference "switchboard-sdk-ios" */;
+			productName = SwitchboardWhisper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5954B83E4A4AEF28256D7084 /* Project object */;
 }
