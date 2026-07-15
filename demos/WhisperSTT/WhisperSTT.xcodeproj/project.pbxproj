@@ -15,8 +15,6 @@
 		5B00000000000000000000C2 /* SwitchboardOnnx in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B2 /* SwitchboardOnnx */; };
 		5B00000000000000000000C3 /* SwitchboardSileroVAD in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B3 /* SwitchboardSileroVAD */; };
 		5B00000000000000000000C4 /* SwitchboardWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 5B00000000000000000000B4 /* SwitchboardWhisper */; };
-		5B00000000000000000000E2 /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00000000000000000000E1 /* whisper.xcframework */; };
-		5B00000000000000000000E3 /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00000000000000000000E1 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5B00000000000000000000E3 /* whisper.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		15DD653C446C3B88B9F3E917 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		5B00000000000000000000E1 /* whisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = whisper.xcframework; path = ../../libs/whisper.xcframework; sourceTree = "<group>"; };
 		2F5BE9337C51CCB38079173F /* WhisperSTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhisperSTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EDEBFD60A4A82AF044F0CE /* STTExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = STTExample.json; sourceTree = "<group>"; };
 		5B00000000000000000000D1 /* STTExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTExample.swift; sourceTree = "<group>"; };
@@ -51,7 +47,6 @@
 				5B00000000000000000000C2 /* SwitchboardOnnx in Frameworks */,
 				5B00000000000000000000C3 /* SwitchboardSileroVAD in Frameworks */,
 				5B00000000000000000000C4 /* SwitchboardWhisper in Frameworks */,
-				5B00000000000000000000E2 /* whisper.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +65,6 @@
 		5B00000000000000000000E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B00000000000000000000E1 /* whisper.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -378,7 +372,7 @@
 			repositoryURL = "https://github.com/switchboard-sdk/switchboard-sdk-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.2.4;
+				version = 3.2.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
